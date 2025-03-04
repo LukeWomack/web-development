@@ -1,19 +1,12 @@
 import React from "react";
-import Card from "./Card";
+import CardList from "./cardList";
 import "./App.css";
 
-function App(){
-  const cards = [
-    {title: "Card 1", content: "First", color: "black"},
-    {title: "Card 2", content: "Second", color: "green"},
-    {title: "Card 3", content: "Third", color: "blue"},
-  ];
-  
+function App() {
   return (
-    <div className="container">
-      {cards.map((card, index) => (
-        <Card key={index}{...card} />
-      ))}
+    <div className="app">
+      <h1>Card Application</h1>
+      <CardList />
     </div>
   );
 }
